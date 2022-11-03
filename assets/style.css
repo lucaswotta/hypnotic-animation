@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background: #000;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#Illu {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    background-color: #5f5f5f;
+    color: #000;
+}
+
+.container {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -200px;
+}
+
+.square {
+    height: 94%;
+    width: 94%;
+    background: #6a8866;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -47% 0 0 -47%;
+    background: linear-gradient(-45deg, #ffee00, #ff0062, #4ab0d4, #41ecc4);
+    animation: fundo 2s ease infinite;
+}
+
+@keyframes fundo {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.black {
+    background: #000;
+    animation: rotate 14s infinite linear;
+}
+
+@keyframes rotate {
+    10% {
+        transform: scale(0.9);
+    }
+    
+    20% {
+        transform: skew(2deg, 5deg);
+    }
+
+    30% {
+        transform: rotate(-45deg);
+    }
+
+    60% {
+        transform: skew(-2deg, -5deg);
+    }
+
+    90% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: initial;
+    }
+
+}
